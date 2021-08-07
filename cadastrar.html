@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações</p>
+    </header>
+    <form action="./funcao/cadastrar.php" method="POST">
+        <fieldset>
+            <div class="nome">
+                <label for="nome">Nome <input required type="text" name="nome" id="nome"></label>
+            </div>
+            <div class="nome">
+                <label for="sobrenome">Sobrenome <input required type="text" name="sobrenome" id="sobrenome"></label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="email">Email <input required type="email" name="email" id="email"></label>
+        </div>
+        <div>
+            <label>De qual lado da aplicação você desenvolve?</label> <label>
+                <input checked type="radio" name="devweb" id="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="devweb" value="fullstack">Full stack
+            </label>
+        </div>
+        <div>
+            <label>Senioridade
+                <select required name="senioridade" id="senioridade">
+                    <option selected disabled value="">Escolha</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+
+                </select></label>
+        </div>
+        <fieldset>
+            <div id="check">
+                <label>Selecione as tecnologias que utiliza:</label><br>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia1" value="HTML">HTML</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia2" value="CSS">CSS</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia3" value="javascript">JavaScript</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia4" value="php">PHP</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia5" value="c#">C#</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia6" value="python">Python</label>
+                <label><input type="checkbox" name="tecnologia[]" id="tecnologia7" value="java">Java</label>
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label>Conte um pouco da sua experiência:</label>
+            <textarea name="experiencia" id="experiencia" cols="60" rows="6"></textarea>
+        </div>
+        <button type="submit">Concluído</button><br>
+        <button onclick="voltar()">Voltar</button>
+    </form>
+    <footer>
+        <p>Developed by &copy;Pedro Motta</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
