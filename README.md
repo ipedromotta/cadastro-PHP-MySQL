@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://github.com/ipedromotta/php-mysql/blob/main/ico-php.png" width="50"><br> Sistema PHP de consulta a banco de dados MySQL
+<img src="https://github.com/ipedromotta/cadastro-PHP-MySQL/blob/main/img/ico-php.png" width="50"><br> Sistema PHP de consulta a banco de dados MySQL
 </h1>
 <p align="center">Menu inicial: </p>
 <p align="center">
