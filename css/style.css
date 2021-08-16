@@ -22,13 +22,27 @@ form {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.consulta-form{
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.consulta-form p{
+    font-size: 1.2rem;
+    margin-bottom: -6%;
+    font-weight: bold;
+}
+
 section{
-    display: inline-block;
-    margin-top: 1%;
+    display: block;
+    margin-top: 1%!important;
+    margin: auto;
     background-color: #8e75da;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 400px;
 }
 
 header{

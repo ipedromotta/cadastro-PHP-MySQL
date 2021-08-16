@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <?php
-    include 'funcao/banco.php';
+    include 'banco.php';
 
     $query = "SELECT * FROM devs";
     
@@ -21,8 +21,8 @@
         <h1>Consulta de cadastros</h1>
     </header>
     <section>
-        <form action="funcao/cadastros.php" method="POST">
-            <label for="id">Desenvolvedor: <br>
+        <form class="consulta-form" action="cadastros.php" method="POST">
+            <label for="id"><p>Desenvolvedor:</p> <br>
             <select id="id" name="id" required>   
                 <option value="" selected="selected">Selecione:</option>
                 <?php
@@ -42,7 +42,7 @@
     <footer>
         <p>Developed by &copy;Pedro Motta</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
